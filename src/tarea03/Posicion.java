@@ -27,6 +27,13 @@ public class Posicion {
             System.out.printf("Error. No se ha definido una posición válida.\n");
         }
     }
+
+    /**
+     * Constructor por defecto Posicion.
+     */
+    Posicion() {
+        throw new UnsupportedOperationException("Constructor por defecto no soportado.");
+    }
     
     /**
      * Primero creamos el getFila.
