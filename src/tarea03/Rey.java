@@ -33,4 +33,18 @@ public class Rey {
     public Rey() {
         posicion = new Posicion(1, 'e');
     }
+    
+    /**
+     * Creación del método getColor.
+     */
+    public Color getColor() {
+        return this.color;
+    }
+    
+    /** 
+     * Creación del método getPosicion
+     */
+    public Posicion getPosicion() {
+        return this.posicion;
+    }
 }
