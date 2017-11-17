@@ -27,4 +27,45 @@ public class Posicion {
             System.out.printf("Error. No se ha definido una posición válida.\n");
         }
     }
+    
+    /**
+     * Primero creamos el getFila.
+     * Devolverá un entero entre 1 y 8.
+     */
+    public int getFila() {
+        return fila;
+    }
+    
+    /**
+     * Creamos el getColumna.
+     * Devolverá un carácter entre a y h.
+     */
+    public char getColumna() {
+        return columna;
+    }
+    
+    /**
+     * Creamos el método setFila con una comprobación de valor.
+     */
+    public void setFila() {
+        if (fila >= 1 && fila <= 8) {
+            this.fila = fila;
+        } else {
+            this.fila = 1;
+            System.out.printf("Error. La posición indicada para fila no es válida.");
+        }
+    }
+    
+    /**
+     * Creamos el método setColumna con una comprobación de valor.
+     */
+    public void setColumna() {
+        if (columna >= 97 && columna <= 104) {
+            this.columna = columna;
+        } else {
+            this.columna = 'a';
+            System.out.printf("Error. La posición indicada para columna no es válida.");
+        }
+    }
+    
 }
