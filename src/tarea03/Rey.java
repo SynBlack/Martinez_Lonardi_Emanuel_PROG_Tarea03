@@ -26,4 +26,11 @@ public class Rey {
                 break;
         }
     }
+    
+    /**
+     * Constructor por defecto que cree un rey blanco
+     */
+    public Rey() {
+        posicion = new Posicion(1, 'e');
+    }
 }
