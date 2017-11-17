@@ -68,4 +68,7 @@ public class Posicion {
         }
     }
     
+    public String toString() {
+        return String.format("La pieza se encuentra en la posición", fila, columna);
+    }
 }
