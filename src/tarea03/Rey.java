@@ -47,4 +47,13 @@ public class Rey {
     public Posicion getPosicion() {
         return this.posicion;
     }
+    
+    /**
+     * Creación del método toString que devuelva los atributos del rey. 
+     * @return rey devuelve el String creado anteriormente.
+     */
+    public String toString() {
+        String rey = this.color+Integer.toString(this.posicion.getFila())+this.posicion.getColumna();
+        return rey;
+    }
 }
