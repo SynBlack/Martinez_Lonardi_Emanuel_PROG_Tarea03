@@ -54,7 +54,7 @@ public class Posicion {
     /**
      * Creamos el método setFila con una comprobación de valor.
      */
-    public void setFila() {
+    public void setFila(int fila) {
         if (fila >= 1 && fila <= 8) {
             this.fila = fila;
         } else {
@@ -66,7 +66,7 @@ public class Posicion {
     /**
      * Creamos el método setColumna con una comprobación de valor.
      */
-    public void setColumna() {
+    public void setColumna(char columna) {
         if (columna >= 97 && columna <= 104) {
             this.columna = columna;
         } else {
