@@ -7,23 +7,22 @@ package tarea03;
  */
 public class Rey {
 
-    private Color color;
-    private Posicion posicion = new Posicion();
+    public Color color;
+    public Posicion posicion = new Posicion(1,'a');
 
     /**
-     * Constructor que acepte como parámetros el color.
-     * @param color es un enumerado.
+     * Constructor en función del color que nos pasen.
      */
     
-    public Rey(Color color) {
-        this.color = color;
-        switch (color) {
-            case BLANCO:
-                posicion = new Posicion(1, 'e');
-                break;
-            case NEGRO:
-                posicion = new Posicion(8, 'e');
-                break;
+    public Rey(int color) {
+        if (color == 1) {
+            this.color = Color.BLANCO;
+            this.posicion.setFila(1);
+            this.posicion.setColumna('e');
+        } else {
+            this.color = Color.NEGRO;
+            this.posicion.setFila(8);
+            this.posicion.setColumna('e');
         }
     }
     
